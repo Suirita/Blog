@@ -8,9 +8,7 @@ use App\Http\Controllers\Blog\CommentController;
 use App\Http\Controllers\Blog\CategoryController;
 use App\Http\Controllers\Blog\DashboardController;
 
-Route::get('/', function () {
-    return Inertia::render('Welcome');
-})->name('home');
+Route::get('/', [ArticleController::class, 'index'])->name('home');
 
 Route::middleware('auth')->group(function () {
 
