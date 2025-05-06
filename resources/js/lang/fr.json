@@ -1,0 +1,590 @@
+{
+    "sidebar": {
+        "dashboard": "Tableau de bord",
+        "users": "Utilisateurs",
+        "articles": "Articles",
+        "categories": "Catégories",
+        "comments": "commentaires"
+    },
+    "dashboardArticles": {
+        "breadcrumbs": {
+            "dashboard": "Tableau de bord",
+            "articles": "Articles"
+        },
+        "title": "Articles",
+        "header": "liste des articles",
+        "searchPlaceholder": "Rechercher des articles...",
+        "categoryFilterPlaceholder": "Filtrer par catégorie",
+        "categorySelectLabel": "Catégories",
+        "categoryAll": "Toutes les catégories",
+        "create": "Créer un nouvel article",
+        "import": "Importer des articles",
+        "export": "Exporter des articles",
+        "table": {
+            "title": "Titre",
+            "author": "Auteur",
+            "category": "Catégorie",
+            "views": "Vues",
+            "comments": "Commentaires",
+            "actions": "Actions",
+            "actionsPopover": {
+                "view": "Voir",
+                "edit": "Modifier",
+                "delete": "Supprimer"
+            }
+        },
+        "noMatches": "Aucun résultat trouvé",
+        "noArticles": "Aucun article",
+        "noArticlesDescription": "Vous n'avez pas encore créé d'article."
+    },
+    "importArticlesPopover": {
+        "title": "Importer des articles",
+        "description": "Veuillez sélectionner un fichier .xlsx, .xls, .csv pour importer des articles",
+        "inputLabel": "Fichier",
+        "inputPlaceholder": "Sélectionner un fichier",
+        "fileError": "Veuillez sélectionner un fichier",
+        "importButton": "Importer",
+        "toast": {
+            "success": {
+                "title": "Articles importés avec succès",
+                "description": "Vos articles ont été importés avec succès"
+            },
+            "error": {
+                "title": "Erreur lors de l'importation des articles",
+                "description": "Une erreur s'est produite lors de l'importation de vos articles"
+            }
+        }
+    },
+    "createArticleDialog": {
+        "title": "Créer un nouvel article",
+        "description": "Veuillez entrer les détails de l'article",
+        "titleInputLabel": "Titre",
+        "titleInputPlaceholder": "Titre de l'article",
+        "titleInputDescription": "C'est le titre de votre article .",
+        "categoryInputLabel": "Catégorie",
+        "categoryInputPlaceholder": "Catégorie de l'article",
+        "categorySelectLabel": "Catégories",
+        "categoryInputDescription": "C'est la catégorie de votre article .",
+        "contentInputLabel": "Contenu",
+        "contentInputPlaceholder": "Contenu de l'article",
+        "contentInputDescription": "C'est le contenu de votre article .",
+        "cancelButton": "Annuler",
+        "submitButton": "Créer",
+        "formSchema": {
+            "title": {
+                "string": "Le titre ne doit pas être vide.",
+                "min": "Le titre doit comporter au moins 5 caractères.",
+                "max": "Le titre ne doit pas dépasser 100 caractères.",
+                "regex": "Le titre ne doit comporter que des lettres, des chiffres, des espaces, des tirets, des points, des virgules, des points d'exclamation et des points d'interrogation."
+            },
+            "category": "La catégorie doit être sélectionnée",
+            "content": {
+                "string": "Le contenu ne doit pas être vide.",
+                "min": "Le contenu doit comporter au moins 5 caractères.",
+                "regex": "Le contenu ne doit comporter que des caractères autorisés."
+            }
+        },
+        "toast": {
+            "success": {
+                "title": "Article créé avec succès",
+                "description": "Votre article a été créé avec succès"
+            },
+            "error": {
+                "title": "Erreur lors de la création de l'article",
+                "description": "Une erreur s'est produite lors de la création de votre article"
+            }
+        }
+    },
+    "viewArticleDialog": {
+        "title": "Voir l'article",
+        "author": "Par",
+        "category": "Catégorie",
+        "views": "Vues",
+        "comments": "Commentaires",
+        "noComments": "Aucun commentaire",
+        "cancelButton": "Annuler"
+    },
+    "editArticleDialog": {
+        "title": "Modifier un article",
+        "description": "Veuillez entrer les détails de l'article",
+        "titleInputLabel": "Titre",
+        "titleInputPlaceholder": "Titre de l'article",
+        "titleInputDescription": "C'est le titre de votre article .",
+        "categoryInputLabel": "Catégorie",
+        "categoryInputPlaceholder": "Catégorie de l'article",
+        "categorySelectLabel": "Catégories",
+        "categoryInputDescription": "C'est la catégorie de votre article .",
+        "contentInputLabel": "Contenu",
+        "contentInputPlaceholder": "Contenu de l'article",
+        "contentInputDescription": "C'est le contenu de votre article .",
+        "cancelButton": "Annuler",
+        "submitButton": "Modifier",
+        "formSchema": {
+            "title": {
+                "string": "Le titre ne doit pas être vide.",
+                "min": "Le titre doit comporter au moins 5 caractères.",
+                "max": "Le titre ne doit pas dépasser 100 caractères.",
+                "regex": "Le titre ne doit comporter que des lettres, des chiffres, des espaces, des tirets, des points, des virgules, des points d'exclamation et des points d'interrogation."
+            },
+            "category": "La catégorie doit être sélectionnée",
+            "content": {
+                "string": "Le contenu ne doit pas être vide.",
+                "min": "Le contenu doit comporter au moins 5 caractères.",
+                "regex": "Le contenu ne doit comporter que des caractères autorisés."
+            }
+        },
+        "toast": {
+            "success": {
+                "title": "Article modifié avec succès",
+                "description": "Votre article a été modifié avec succès"
+            },
+            "error": {
+                "title": "Erreur lors de la modification de l'article",
+                "description": "Une erreur s'est produite lors de la modification de votre article"
+            }
+        }
+    },
+    "deleteArticleDialog": {
+        "title": "Supprimer un article",
+        "description": "Êtes-vous sûr de vouloir supprimer cet article ?",
+        "cancelButton": "Annuler",
+        "submitButton": "Supprimer",
+        "toast": {
+            "success": {
+                "title": "Article supprimé avec succès",
+                "description": "Votre article a été supprimé avec succès"
+            },
+            "error": {
+                "title": "Erreur lors de la suppression de l'article",
+                "description": "Une erreur s'est produite lors de la suppression de votre article"
+            }
+        }
+    },
+    "dashboardCategories": {
+        "breadcrumbs": {
+            "dashboard": "Tableau de bord",
+            "categories": "Catégories"
+        },
+        "title": "Catégories",
+        "header": "liste des catégories",
+        "searchPlaceholder": "Rechercher des catégories...",
+        "create": "Créer une nouvelle catégorie",
+        "import": "Importer des catégories",
+        "export": "Exporter des catégories",
+        "table": {
+            "name": "Nom",
+            "actions": "Actions",
+            "actionsPopover": {
+                "edit": "Modifier",
+                "delete": "Supprimer"
+            }
+        },
+        "noMatches": "Aucun résultat trouvé",
+        "noCategories": "Aucune catégorie",
+        "noCategoriesDescription": "Vous n'avez pas encore créé d'article."
+    },
+    "importCategoriesPopover": {
+        "title": "Importer des catégories",
+        "description": "Veuillez sélectionner un fichier .xlsx, .xls, .csv pour importer des catégories",
+        "inputLabel": "Fichier",
+        "inputPlaceholder": "Sélectionner un fichier",
+        "fileError": "Veuillez sélectionner un fichier",
+        "importButton": "Importer",
+        "toast": {
+            "success": {
+                "title": "Catégories importées avec succès",
+                "description": "Vos catégories ont été importées avec succès"
+            },
+            "error": {
+                "title": "Erreur lors de l'importation des catégories",
+                "description": "Une erreur s'est produite lors de l'importation de vos catégories"
+            }
+        }
+    },
+    "createCategoryDialog": {
+        "title": "Créer une nouvelle catégorie",
+        "description": "Veuillez entrer les détails de la catégorie",
+        "nameInputLabel": "Nom",
+        "nameInputPlaceholder": "Nom de la catégorie",
+        "nameInputDescription": "C'est le nom de votre catégorie.",
+        "cancelButton": "Annuler",
+        "submitButton": "Créer",
+        "formSchema": {
+            "name": {
+                "string": "Le nom ne doit pas être vide.",
+                "min": "Le nom doit comporter au moins 3 caractères.",
+                "max": "Le nom ne doit pas dépasser 25 caractères.",
+                "regex": "Le nom ne doit comporter que des lettres, des chiffres, des espaces, des tirets, des points, des virgules, des points d'exclamation et des points d'interrogation."
+            }
+        },
+        "toast": {
+            "success": {
+                "title": "Catégorie créée avec succès",
+                "description": "Votre catégorie a été créée avec succès"
+            },
+            "error": {
+                "title": "Erreur lors de la création de la catégorie",
+                "description": "Une erreur s'est produite lors de la création de votre catégorie"
+            }
+        }
+    },
+    "editCategoryDialog": {
+        "title": "Modifier une catégorie",
+        "description": "Veuillez entrer les détails de la catégorie",
+        "nameInputLabel": "Nom",
+        "nameInputPlaceholder": "Nom de la catégorie",
+        "nameInputDescription": "C'est le nom de votre catégorie.",
+        "cancelButton": "Annuler",
+        "submitButton": "Modifier",
+        "formSchema": {
+            "name": {
+                "string": "Le nom ne doit pas être vide.",
+                "min": "Le nom doit comporter au moins 3 caractères.",
+                "max": "Le nom ne doit pas dépasser 25 caractères.",
+                "regex": "Le nom ne doit comporter que des lettres, des chiffres, des espaces, des tirets, des points, des virgules, des points d'exclamation et des points d'interrogation."
+            }
+        },
+        "toast": {
+            "success": {
+                "title": "Catégorie modifiée avec succès",
+                "description": "Votre catégorie a été modifiée avec succès"
+            },
+            "error": {
+                "title": "Erreur lors de la modification de la catégorie",
+                "description": "Une erreur s'est produite lors de la modification de votre catégorie"
+            }
+        }
+    },
+    "deleteCategoryDialog": {
+        "title": "Supprimer une catégorie",
+        "description": "Êtes-vous sûr de vouloir supprimer cette catégorie ?",
+        "cancelButton": "Annuler",
+        "submitButton": "Supprimer",
+        "toast": {
+            "success": {
+                "title": "Catégorie supprimée avec succès",
+                "description": "Votre catégorie a été supprimée avec succès"
+            },
+            "error": {
+                "title": "Erreur lors de la suppression de la catégorie",
+                "description": "Une erreur s'est produite lors de la suppression de votre catégorie"
+            }
+        }
+    },
+    "dashboardUsers": {
+        "breadcrumbs": {
+            "dashboard": "Tableau de bord",
+            "users": "Utilisateurs"
+        },
+        "title": "Utilisateurs",
+        "header": "liste des utilisateurs",
+        "searchPlaceholder": "Rechercher des utilisateurs...",
+        "RoleFilterPlaceholder": "Filtrer par rôle",
+        "RoleSelectLabel": "Rôles",
+        "RoleAll": "Tous les rôles",
+        "create": "Créer un nouvel utilisateur",
+        "import": "Importer des utilisateurs",
+        "export": "Exporter des utilisateurs",
+        "table": {
+            "name": "Nom",
+            "email": "Email",
+            "hashedPassword": "Mot de passe haché",
+            "role": "Rôle",
+            "actions": "Actions",
+            "actionsPopover": {
+                "view": "Voir",
+                "edit": "Modifier",
+                "delete": "Supprimer"
+            }
+        },
+        "noMatches": "Aucun résultat trouvé",
+        "noUsers": "Aucun utilisateur",
+        "noUsersDescription": "Vous n'avez pas encore créé d'utilisateur."
+    },
+    "importUsersPopover": {
+        "title": "Importer des utilisateurs",
+        "description": "Veuillez sélectionner un fichier .xlsx, .xls, .csv pour importer des utilisateurs",
+        "inputLabel": "Fichier",
+        "inputPlaceholder": "Sélectionner un fichier",
+        "fileError": "Veuillez sélectionner un fichier",
+        "importButton": "Importer",
+        "toast": {
+            "success": {
+                "title": "Utilisateurs importés avec succès",
+                "description": "Vos utilisateurs ont été importés avec succès"
+            },
+            "error": {
+                "title": "Erreur lors de l'importation des utilisateurs",
+                "description": "Une erreur s'est produite lors de l'importation de vos utilisateurs"
+            }
+        }
+    },
+    "createUserDialog": {
+        "title": "Créer un nouvel utilisateur",
+        "description": "Veuillez entrer les détails de l'utilisateur",
+        "nameInputLabel": "Nom",
+        "nameInputPlaceholder": "Nom de l'utilisateur",
+        "nameInputDescription": "C'est le nom de votre utilisateur.",
+        "emailInputLabel": "Email",
+        "emailInputPlaceholder": "Email de l'utilisateur",
+        "emailInputDescription": "C'est l'email de votre utilisateur.",
+        "passwordInputLabel": "Mot de passe",
+        "passwordInputDescription": "C'est le mot de passe de votre utilisateur.",
+        "roleInputLabel": "Rôle",
+        "roleInputPlaceholder": "Rôle de l'utilisateur",
+        "roleSelectLabel": "Rôles",
+        "roleInputDescription": "C'est le rôle de votre utilisateur.",
+        "cancelButton": "Annuler",
+        "submitButton": "Créer",
+        "formSchema": {
+            "name": {
+                "string": "Le nom ne doit pas être vide.",
+                "min": "Le nom doit comporter au moins 3 caractères.",
+                "max": "Le nom ne doit pas dépasser 25 caractères.",
+                "regex": "Le nom ne doit comporter que des lettres, des chiffres, des espaces, des tirets, des points, des virgules, des points d'exclamation et des points d'interrogation."
+            },
+            "email": {
+                "string": "L'email ne doit pas être vide.",
+                "email": "L'email doit être une adresse email valide."
+            },
+            "password": {
+                "string": "Le mot de passe ne doit pas être vide.",
+                "min": "Le mot de passe doit comporter au moins 8 caractères.",
+                "max": "Le mot de passe ne doit pas dépasser 15 caractères."
+            },
+            "role": "Le rôle ne doit pas être vide."
+        },
+        "toast": {
+            "success": {
+                "title": "Utilisateur créé avec succès",
+                "description": "Votre utilisateur a été créé avec succès"
+            },
+            "error": {
+                "title": "Erreur lors de la création de l'utilisateur",
+                "description": "Une erreur s'est produite lors de la création de votre utilisateur"
+            }
+        }
+    },
+    "viewUserDialog": {
+        "title": "Voir l'utilisateur",
+        "email": "Email",
+        "role": "Rôle",
+        "articles": "Articles",
+        "comments": "commentaires",
+        "cancelButton": "Annuler"
+    },
+    "editUserDialog": {
+        "title": "Modifier un utilisateur",
+        "description": "Veuillez entrer les détails de l'utilisateur",
+        "nameInputLabel": "Nom",
+        "nameInputPlaceholder": "Nom de l'utilisateur",
+        "nameInputDescription": "C'est le nom de votre utilisateur.",
+        "emailInputLabel": "Email",
+        "emailInputPlaceholder": "Email de l'utilisateur",
+        "emailInputDescription": "C'est l'email de votre utilisateur.",
+        "oldPasswordInputLabel": "Ancien mot de passe",
+        "oldPasswordInputPlaceholder": "Ancien mot de passe de l'utilisateur",
+        "oldPasswordInputDescription": "C'est le mot de passe de votre utilisateur.",
+        "newPasswordInputLabel": "Nouveau mot de passe",
+        "newPasswordInputPlaceholder": "Nouveau mot de passe de l'utilisateur",
+        "newPasswordInputDescription": "C'est le nouveau mot de passe de votre utilisateur.",
+        "roleInputLabel": "Rôle",
+        "roleInputPlaceholder": "Rôle de l'utilisateur",
+        "roleSelectLabel": "Rôles",
+        "roleInputDescription": "C'est le rôle de votre utilisateur.",
+        "cancelButton": "Annuler",
+        "submitButton": "Modifier",
+        "formSchema": {
+            "name": {
+                "string": "Le nom ne doit pas être vide.",
+                "min": "Le nom doit comporter au moins 3 caractères.",
+                "max": "Le nom ne doit pas dépasser 25 caractères.",
+                "regex": "Le nom ne doit comporter que des lettres, des chiffres, des espaces, des tirets, des points, des virgules, des points d'exclamation et des points d'interrogation."
+            },
+            "email": {
+                "string": "L'email ne doit pas être vide.",
+                "min": "L'email doit comporter au moins 5 caractères.",
+                "max": "L'email ne doit pas dépasser 100 caractères.",
+                "regex": "L'email ne doit comporter que des lettres, des chiffres, des espaces, des tirets, des points, des virgules, des points d'exclamation et des points d'interrogation."
+            },
+            "oldPassword": {
+                "string": "Le mot de passe actuel ne doit pas être vide.",
+                "min": "Le mot de passe actuel doit comporter au moins 8 caractères.",
+                "max": "Le mot de passe actuel ne doit pas dépasser 15 caractères."
+            },
+            "newPassword": {
+                "string": "Le nouveau mot de passe ne doit pas être vide.",
+                "min": "Le nouveau mot de passe doit comporter au moins 8 caractères.",
+                "max": "Le nouveau mot de passe ne doit pas dépasser 15 caractères."
+            },
+            "role": {
+                "string": "Le rôle ne doit pas être vide.",
+                "min": "Le rôle doit comporter au moins 3 caractères.",
+                "max": "Le rôle ne doit pas dépasser 25 caractères.",
+                "regex": "Le rôle ne doit comporter que des lettres, des chiffres, des espaces, des tirets, des points, des virgules, des points d'exclamation et des points d'interrogation."
+            }
+        },
+        "toast": {
+            "success": {
+                "title": "Utilisateur modifié avec succès",
+                "description": "Votre utilisateur a été modifié avec succès"
+            },
+            "error": {
+                "title": "Erreur lors de la modification de l'utilisateur",
+                "description": "Une erreur s'est produite lors de la modification de votre utilisateur"
+            }
+        }
+    },
+    "deleteUserDialog": {
+        "title": "Supprimer un utilisateur",
+        "description": "Êtes-vous sûr de vouloir supprimer cet utilisateur ?",
+        "cancelButton": "Annuler",
+        "submitButton": "Supprimer",
+        "toast": {
+            "success": {
+                "title": "Utilisateur supprimé avec succès",
+                "description": "Votre utilisateur a été supprimé avec succès"
+            },
+            "error": {
+                "title": "Erreur lors de la suppression de l'utilisateur",
+                "description": "Une erreur s'est produite lors de la suppression de votre utilisateur"
+            }
+        }
+    },
+    "dashboardComments": {
+        "breadcrumbs": {
+            "dashboard": "Tableau de bord",
+            "comments": "Commentaires"
+        },
+        "title": "Commentaires",
+        "header": "liste des commentaires",
+        "articleFilterPlaceholder": "Filtrer par article",
+        "articleSelectLabel": "Articles",
+        "articleAll": "Tous les articles",
+        "userFilterPlaceholder": "Filtrer par utilisateur",
+        "userSelectLabel": "Utilisateurs",
+        "userAll": "Tous les utilisateurs",
+        "create": "Créer un nouveau commentaire",
+        "import": "Importer des commentaires",
+        "export": "Exporter des commentaires",
+        "table": {
+            "comments": "Commentaires",
+            "user": "Utilisateur",
+            "article": "Article",
+            "actions": "Actions",
+            "actionsPopover": {
+                "edit": "Modifier",
+                "delete": "Supprimer"
+            }
+        },
+        "noMatches": "Aucun résultat trouvé",
+        "nocomments": "Aucun commentaire",
+        "nocommentsDescription": "Vous n'avez pas encore créé de commentaire."
+    },
+    "importCommentsPopover": {
+        "title": "Importer des commentaires",
+        "description": "Veuillez sélectionner un fichier .xlsx, .xls, .csv pour importer des commentaires",
+        "inputLabel": "Fichier",
+        "inputPlaceholder": "Sélectionner un fichier",
+        "fileError": "Veuillez sélectionner un fichier",
+        "importButton": "Importer",
+        "toast": {
+            "success": {
+                "title": "Commentaires importés avec succès",
+                "description": "Vos commentaires ont été importés avec succès"
+            },
+            "error": {
+                "title": "Erreur lors de l'importation des commentaires",
+                "description": "Une erreur s'est produite lors de l'importation de vos commentaires"
+            }
+        }
+    },
+    "createCommentDialog": {
+        "title": "Créer un nouveau commentaire",
+        "description": "Veuillez entrer les détails du commentaire",
+        "articleInputLabel": "Article",
+        "articleInputPlaceholder": "Titre de l'article",
+        "articleSelectLabel": "Articles",
+        "articleInputDescription": "C'est le titre de l'article.",
+        "userInputLabel": "Utilisateur",
+        "userInputPlaceholder": "Utilisateur du commentaire",
+        "userSelectLabel": "Utilisateurs",
+        "userInputDescription": "C'est l'utilisateur du commentaire.",
+        "contentInputLabel": "Contenu",
+        "contentInputPlaceholder": "Contenu du commentaire",
+        "contentInputDescription": "C'est le contenu de votre commentaire.",
+        "cancelButton": "Annuler",
+        "submitButton": "Créer",
+        "formSchema": {
+            "article": "L'article doit être sélectionné.",
+            "user": "L'utilisateur doit être sélectionné.",
+            "content": {
+                "string": "Le contenu ne doit pas être vide.",
+                "min": "Le contenu doit comporter au moins 5 caractères.",
+                "max": "Le contenu ne doit pas dépasser 100 caractères.",
+                "regex": "Le contenu ne doit comporter que des caractères autorisés."
+            }
+        },
+        "toast": {
+            "success": {
+                "title": "Commentaire créé avec succès",
+                "description": "Votre commentaire a été créé avec succès"
+            },
+            "error": {
+                "title": "Erreur lors de la création du commentaire",
+                "description": "Une erreur s'est produite lors de la création de votre commentaire"
+            }
+        }
+    },
+    "editCommentDialog": {
+        "title": "Modifier un commentaire",
+        "description": "Veuillez entrer les détails du commentaire",
+        "titleInputLabel": "Titre",
+        "titleInputPlaceholder": "Titre du commentaire",
+        "titleInputDescription": "C'est le titre de votre commentaire.",
+        "contentInputLabel": "Contenu",
+        "contentInputPlaceholder": "Contenu du commentaire",
+        "contentInputDescription": "C'est le contenu de votre commentaire.",
+        "cancelButton": "Annuler",
+        "submitButton": "Modifier",
+        "formSchema": {
+            "title": {
+                "string": "Le titre ne doit pas être vide.",
+                "min": "Le titre doit comporter au moins 5 caractères.",
+                "max": "Le titre ne doit pas dépasser 100 caractères.",
+                "regex": "Le titre ne doit comporter que des lettres, des chiffres, des espaces, des tirets, des points, des virgules, des points d'exclamation et des points d'interrogation."
+            },
+            "content": {
+                "string": "Le contenu ne doit pas être vide.",
+                "min": "Le contenu doit comporter au moins 5 caractères.",
+                "regex": "Le contenu ne doit comporter que des caractères autorisés."
+            }
+        },
+        "toast": {
+            "success": {
+                "title": "Commentaire modifié avec succès",
+                "description": "Votre commentaire a été modifié avec succès"
+            },
+            "error": {
+                "title": "Erreur lors de la modification du commentaire",
+                "description": "Une erreur s'est produite lors de la modification de votre commentaire"
+            }
+        }
+    },
+    "deleteCommentDialog": {
+        "title": "Supprimer un commentaire",
+        "description": "Êtes-vous sûr de vouloir supprimer ce commentaire ?",
+        "cancelButton": "Annuler",
+        "submitButton": "Supprimer",
+        "toast": {
+            "success": {
+                "title": "Commentaire supprimé avec succès",
+                "description": "Votre commentaire a été supprimé avec succès"
+            },
+            "error": {
+                "title": "Erreur lors de la suppression du commentaire",
+                "description": "Une erreur s'est produite lors de la suppression de votre commentaire"
+            }
+        }
+    }
+}

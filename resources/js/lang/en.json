@@ -1,0 +1,590 @@
+{
+    "sidebar": {
+        "dashboard": "Dashboard",
+        "users": "Users",
+        "articles": "Articles",
+        "categories": "Categories",
+        "comments": "Comments"
+    },
+    "dashboardArticles": {
+        "breadcrumbs": {
+            "dashboard": "Dashboard",
+            "articles": "Articles"
+        },
+        "title": "Articles",
+        "header": "list of articles",
+        "searchPlaceholder": "Search articles...",
+        "categoryFilterPlaceholder": "Filter by category",
+        "categorySelectLabel": "Categories",
+        "categoryAll": "All categories",
+        "create": "Create a new article",
+        "import": "Import articles",
+        "export": "Export articles",
+        "table": {
+            "title": "Title",
+            "author": "Author",
+            "category": "Category",
+            "views": "Views",
+            "comments": "Comments",
+            "actions": "Actions",
+            "actionsPopover": {
+                "view": "View",
+                "edit": "Edit",
+                "delete": "Delete"
+            }
+        },
+        "noMatches": "No matches found",
+        "noArticles": "No articles",
+        "noArticlesDescription": "You haven't created any articles yet."
+    },
+    "importArticlesPopover": {
+        "title": "Import articles",
+        "description": "Please select a .xlsx, .xls, .csv file to import articles",
+        "inputLabel": "File",
+        "inputPlaceholder": "Select a file",
+        "fileError": "Please select a file",
+        "importButton": "Import",
+        "toast": {
+            "success": {
+                "title": "Articles imported successfully",
+                "description": "Your articles have been imported successfully"
+            },
+            "error": {
+                "title": "Error while importing articles",
+                "description": "An error occurred while importing your articles"
+            }
+        }
+    },
+    "createArticleDialog": {
+        "title": "Create a new article",
+        "description": "Please enter the article details",
+        "titleInputLabel": "Title",
+        "titleInputPlaceholder": "Title of the article",
+        "titleInputDescription": "This is the title of your article.",
+        "categoryInputLabel": "Category",
+        "categoryInputPlaceholder": "Category of the article",
+        "categorySelectLabel": "Categories",
+        "categoryInputDescription": "This is the category of your article.",
+        "contentInputLabel": "Content",
+        "contentInputPlaceholder": "Content of the article",
+        "contentInputDescription": "This is the content of your article.",
+        "cancelButton": "Cancel",
+        "submitButton": "Create",
+        "formSchema": {
+            "title": {
+                "string": "Title must not be empty.",
+                "min": "Title must be at least 5 characters long.",
+                "max": "Title must not exceed 100 characters.",
+                "regex": "Title must only include letters, numbers, spaces, dashes, periods, commas, exclamation points, and question marks."
+            },
+            "category": "Category must be selected.",
+            "content": {
+                "string": "Content must not be empty.",
+                "min": "Content must be at least 5 characters long.",
+                "regex": "Content must only include allowed characters."
+            }
+        },
+        "toast": {
+            "success": {
+                "title": "Article created successfully",
+                "description": "Your article has been created successfully"
+            },
+            "error": {
+                "title": "Error while creating the article",
+                "description": "An error occurred while creating your article"
+            }
+        }
+    },
+    "viewArticleDialog": {
+        "title": "View Article",
+        "author": "By",
+        "category": "Category",
+        "views": "Views",
+        "comments": "Comments",
+        "noComments": "No comments",
+        "cancelButton": "Cancel"
+    },
+    "editArticleDialog": {
+        "title": "Edit an article",
+        "description": "Please enter the article details",
+        "titleInputLabel": "Title",
+        "titleInputPlaceholder": "Title of the article",
+        "titleInputDescription": "This is the title of your article.",
+        "categoryInputLabel": "Category",
+        "categoryInputPlaceholder": "Category of the article",
+        "categorySelectLabel": "Categories",
+        "categoryInputDescription": "This is the category of your article.",
+        "contentInputLabel": "Content",
+        "contentInputPlaceholder": "Content of the article",
+        "contentInputDescription": "This is the content of your article.",
+        "cancelButton": "Cancel",
+        "submitButton": "Edit",
+        "formSchema": {
+            "title": {
+                "string": "Title must not be empty.",
+                "min": "Title must be at least 5 characters long.",
+                "max": "Title must not exceed 100 characters.",
+                "regex": "Title must only include letters, numbers, spaces, dashes, periods, commas, exclamation points, and question marks."
+            },
+            "category": "Category must be selected.",
+            "content": {
+                "string": "Content must not be empty.",
+                "min": "Content must be at least 5 characters long.",
+                "regex": "Content must only include allowed characters."
+            }
+        },
+        "toast": {
+            "success": {
+                "title": "Article edited successfully",
+                "description": "Your article has been edited successfully"
+            },
+            "error": {
+                "title": "Error while editing the article",
+                "description": "An error occurred while editing your article"
+            }
+        }
+    },
+    "deleteArticleDialog": {
+        "title": "Delete an article",
+        "description": "Are you sure you want to delete this article?",
+        "cancelButton": "Cancel",
+        "submitButton": "Delete",
+        "toast": {
+            "success": {
+                "title": "Article deleted successfully",
+                "description": "Your article has been deleted successfully"
+            },
+            "error": {
+                "title": "Error while deleting the article",
+                "description": "An error occurred while deleting your article"
+            }
+        }
+    },
+    "dashboardCategories": {
+        "breadcrumbs": {
+            "dashboard": "Dashboard",
+            "categories": "Categories"
+        },
+        "title": "Categories",
+        "header": "list of categories",
+        "searchPlaceholder": "Search categories...",
+        "create": "Create a new category",
+        "import": "Import categories",
+        "export": "Export categories",
+        "table": {
+            "name": "Name",
+            "actions": "Actions",
+            "actionsPopover": {
+                "edit": "Edit",
+                "delete": "Delete"
+            }
+        },
+        "noMatches": "No matches found",
+        "noCategories": "No categories",
+        "noCategoriesDescription": "You haven't created any categories yet."
+    },
+    "importCategoriesPopover": {
+        "title": "Import categories",
+        "description": "Please select a .xlsx, .xls, .csv file to import categories",
+        "inputLabel": "File",
+        "inputPlaceholder": "Select a file",
+        "fileError": "Please select a file",
+        "importButton": "Import",
+        "toast": {
+            "success": {
+                "title": "Categories imported successfully",
+                "description": "Your categories have been imported successfully"
+            },
+            "error": {
+                "title": "Error while importing categories",
+                "description": "An error occurred while importing your categories"
+            }
+        }
+    },
+    "createCategoryDialog": {
+        "title": "Create a new category",
+        "description": "Please enter the category details",
+        "nameInputLabel": "Name",
+        "nameInputPlaceholder": "Category name",
+        "nameInputDescription": "This is the name of your category.",
+        "cancelButton": "Annuler",
+        "submitButton": "Create",
+        "formSchema": {
+            "name": {
+                "string": "Name must not be empty.",
+                "min": "Name must be at least 3 characters long.",
+                "max": "Name must not exceed 25 characters.",
+                "regex": "Name must only include letters, numbers, spaces, dashes, periods, commas, exclamation points, and question marks."
+            }
+        },
+        "toast": {
+            "success": {
+                "title": "Category created successfully",
+                "description": "Your category has been created successfully"
+            },
+            "error": {
+                "title": "Error while creating the category",
+                "description": "An error occurred while creating your category"
+            }
+        }
+    },
+    "editCategoryDialog": {
+        "title": "Edit a category",
+        "description": "Please enter the category details",
+        "nameInputLabel": "Name",
+        "nameInputPlaceholder": "Category name",
+        "nameInputDescription": "This is the name of your category.",
+        "cancelButton": "Cancel",
+        "submitButton": "Edit",
+        "formSchema": {
+            "name": {
+                "string": "Name must not be empty.",
+                "min": "Name must be at least 3 characters long.",
+                "max": "Name must not exceed 25 characters.",
+                "regex": "Name must only include letters, numbers, spaces, dashes, periods, commas, exclamation points, and question marks."
+            }
+        },
+        "toast": {
+            "success": {
+                "title": "Category edited successfully",
+                "description": "Your category has been edited successfully"
+            },
+            "error": {
+                "title": "Error while editing the category",
+                "description": "An error occurred while editing your category"
+            }
+        }
+    },
+    "deleteCategoryDialog": {
+        "title": "Delete a category",
+        "description": "Are you sure you want to delete this category?",
+        "cancelButton": "Cancel",
+        "submitButton": "Delete",
+        "toast": {
+            "success": {
+                "title": "Category deleted successfully",
+                "description": "Your category has been deleted successfully"
+            },
+            "error": {
+                "title": "Error while deleting the category",
+                "description": "An error occurred while deleting your category"
+            }
+        }
+    },
+    "dashboardUsers": {
+        "breadcrumbs": {
+            "dashboard": "Dashboard",
+            "users": "Users"
+        },
+        "title": "Users",
+        "header": "list of users",
+        "searchPlaceholder": "Search users...",
+        "RoleFilterPlaceholder": "Filter by role",
+        "RoleSelectLabel": "Roles",
+        "RoleAll": "All roles",
+        "create": "Create a new user",
+        "import": "Import users",
+        "export": "Export users",
+        "table": {
+            "name": "Name",
+            "email": "Email",
+            "hashedPassword": "Hashed Password",
+            "role": "Role",
+            "actions": "Actions",
+            "actionsPopover": {
+                "view": "View",
+                "edit": "Edit",
+                "delete": "Delete"
+            }
+        },
+        "noMatches": "No matches found",
+        "noUsers": "No users",
+        "noUsersDescription": "You haven't created any users yet."
+    },
+    "importUsersPopover": {
+        "title": "Import users",
+        "description": "Please select a .xlsx, .xls, .csv file to import users",
+        "inputLabel": "File",
+        "inputPlaceholder": "Select a file",
+        "fileError": "Please select a file",
+        "importButton": "Import",
+        "toast": {
+            "success": {
+                "title": "Users imported successfully",
+                "description": "Your users have been imported successfully"
+            },
+            "error": {
+                "title": "Error while importing users",
+                "description": "An error occurred while importing your users"
+            }
+        }
+    },
+    "createUserDialog": {
+        "title": "Create a new user",
+        "description": "Please enter the user details",
+        "nameInputLabel": "Name",
+        "nameInputPlaceholder": "User name",
+        "nameInputDescription": "This is the name of your user.",
+        "emailInputLabel": "Email",
+        "emailInputPlaceholder": "User email",
+        "emailInputDescription": "This is the email of your user.",
+        "passwordInputLabel": "Password",
+        "passwordInputDescription": "This is the password of your user.",
+        "roleInputLabel": "Role",
+        "roleInputPlaceholder": "User role",
+        "roleSelectLabel": "Roles",
+        "roleInputDescription": "This is the role of your user.",
+        "cancelButton": "Cancel",
+        "submitButton": "Create",
+        "formSchema": {
+            "name": {
+                "string": "Name must not be empty.",
+                "min": "Name must be at least 3 characters long.",
+                "max": "Name must not exceed 25 characters.",
+                "regex": "Name must only include letters, numbers, spaces, dashes, periods, commas, exclamation points, and question marks."
+            },
+            "email": {
+                "string": "Email must not be empty.",
+                "email": "Email must be a valid email address."
+            },
+            "password": {
+                "string": "Password must not be empty.",
+                "min": "Password must be at least 8 characters long.",
+                "max": "Password must not exceed 15 characters."
+            },
+            "role": "Role must not be empty."
+        },
+        "toast": {
+            "success": {
+                "title": "User created successfully",
+                "description": "Your user has been created successfully"
+            },
+            "error": {
+                "title": "Error while creating the user",
+                "description": "An error occurred while creating your user"
+            }
+        }
+    },
+    "viewUserDialog": {
+        "title": "View User",
+        "email": "Email",
+        "role": "Role",
+        "articles": "Articles",
+        "comments": "Comments",
+        "cancelButton": "Cancel"
+    },
+    "editUserDialog": {
+        "title": "Edit a user",
+        "description": "Please enter the user details",
+        "nameInputLabel": "Name",
+        "nameInputPlaceholder": "User name",
+        "nameInputDescription": "This is the name of your user.",
+        "emailInputLabel": "Email",
+        "emailInputPlaceholder": "User email",
+        "emailInputDescription": "This is the email of your user.",
+        "oldPasswordInputLabel": "Old Password",
+        "oldPasswordInputPlaceholder": "User old password",
+        "oldPasswordInputDescription": "This is the old password of your user.",
+        "newPasswordInputLabel": "New Password",
+        "newPasswordInputPlaceholder": "User new password",
+        "newPasswordInputDescription": "This is the new password of your user.",
+        "roleInputLabel": "Role",
+        "roleInputPlaceholder": "User role",
+        "roleSelectLabel": "Roles",
+        "roleInputDescription": "This is the role of your user.",
+        "cancelButton": "Cancel",
+        "submitButton": "Edit",
+        "formSchema": {
+            "name": {
+                "string": "Name must not be empty.",
+                "min": "Name must be at least 3 characters long.",
+                "max": "Name must not exceed 25 characters.",
+                "regex": "Name must only include letters, numbers, spaces, dashes, periods, commas, exclamation points, and question marks."
+            },
+            "email": {
+                "string": "Email must not be empty.",
+                "min": "Email must be at least 5 characters long.",
+                "max": "Email must not exceed 100 characters.",
+                "regex": "Email must only include letters, numbers, spaces, dashes, periods, commas, exclamation points, and question marks."
+            },
+            "oldPassword": {
+                "string": "Old password must not be empty.",
+                "min": "Old password must be at least 8 characters long.",
+                "max": "Old password must not exceed 15 characters."
+            },
+            "newPassword": {
+                "string": "New password must not be empty.",
+                "min": "New password must be at least 8 characters long.",
+                "max": "New password must not exceed 15 characters."
+            },
+            "role": {
+                "string": "Role must not be empty.",
+                "min": "Role must be at least 3 characters long.",
+                "max": "Role must not exceed 25 characters.",
+                "regex": "Role must only include letters, numbers, spaces, dashes, periods, commas, exclamation points, and question marks."
+            }
+        },
+        "toast": {
+            "success": {
+                "title": "User edited successfully",
+                "description": "Your user has been edited successfully"
+            },
+            "error": {
+                "title": "Error while editing the user",
+                "description": "An error occurred while editing your user"
+            }
+        }
+    },
+    "deleteUserDialog": {
+        "title": "Delete a user",
+        "description": "Are you sure you want to delete this user?",
+        "cancelButton": "Cancel",
+        "submitButton": "Delete",
+        "toast": {
+            "success": {
+                "title": "User deleted successfully",
+                "description": "Your user has been deleted successfully"
+            },
+            "error": {
+                "title": "Error while deleting the user",
+                "description": "An error occurred while deleting your user"
+            }
+        }
+    },
+    "dashboardComments": {
+        "breadcrumbs": {
+            "dashboard": "Dashboard",
+            "comments": "Comments"
+        },
+        "title": "Comments",
+        "header": "list of comments",
+        "articleFilterPlaceholder": "Filter by article",
+        "articleSelectLabel": "Articles",
+        "articleAll": "All articles",
+        "userFilterPlaceholder": "Filter by user",
+        "userSelectLabel": "Users",
+        "userAll": "All users",
+        "create": "Create a new comment",
+        "import": "Import comments",
+        "export": "Export comments",
+        "table": {
+            "comments": "Comments",
+            "user": "User",
+            "article": "Article",
+            "actions": "Actions",
+            "actionsPopover": {
+                "edit": "Edit",
+                "delete": "Delete"
+            }
+        },
+        "noMatches": "No matches found",
+        "noComments": "No comments",
+        "noCommentsDescription": "You haven't created any comments yet."
+    },
+    "importCommentsPopover": {
+        "title": "Import comments",
+        "description": "Please select a .xlsx, .xls, .csv file to import comments",
+        "inputLabel": "File",
+        "inputPlaceholder": "Select a file",
+        "fileError": "Please select a file",
+        "importButton": "Import",
+        "toast": {
+            "success": {
+                "title": "Comments imported successfully",
+                "description": "Your comments have been imported successfully"
+            },
+            "error": {
+                "title": "Error while importing comments",
+                "description": "An error occurred while importing your comments"
+            }
+        }
+    },
+    "createCommentDialog": {
+        "title": "Create a new comment",
+        "description": "Please enter the comment details",
+        "articleInputLabel": "Article",
+        "articleInputPlaceholder": "Title of the article",
+        "articleSelectLabel": "Articles",
+        "articleInputDescription": "This is the title of the article.",
+        "userInputLabel": "User",
+        "userInputPlaceholder": "User of the comment",
+        "userSelectLabel": "Users",
+        "userInputDescription": "This is the user of the comment.",
+        "contentInputLabel": "Content",
+        "contentInputPlaceholder": "Content of the comment",
+        "contentInputDescription": "This is the content of your comment.",
+        "cancelButton": "Cancel",
+        "submitButton": "Create",
+        "formSchema": {
+            "article": "Article must be selected.",
+            "user": "User must be selected.",
+            "content": {
+                "string": "Content must not be empty.",
+                "min": "Content must be at least 5 characters long.",
+                "max": "Content must not exceed 100 characters.",
+                "regex": "Content must only include allowed characters."
+            }
+        },
+        "toast": {
+            "success": {
+                "title": "Comment created successfully",
+                "description": "Your comment has been created successfully"
+            },
+            "error": {
+                "title": "Error while creating the comment",
+                "description": "An error occurred while creating your comment"
+            }
+        }
+    },
+    "editCommentDialog": {
+        "title": "Edit a comment",
+        "description": "Please enter the comment details",
+        "titleInputLabel": "Title",
+        "titleInputPlaceholder": "Title of the comment",
+        "titleInputDescription": "This is the title of your comment.",
+        "contentInputLabel": "Content",
+        "contentInputPlaceholder": "Content of the comment",
+        "contentInputDescription": "This is the content of your comment.",
+        "cancelButton": "Cancel",
+        "submitButton": "Edit",
+        "formSchema": {
+            "title": {
+                "string": "Title must not be empty.",
+                "min": "Title must be at least 5 characters long.",
+                "max": "Title must not exceed 100 characters.",
+                "regex": "Title must only include letters, numbers, spaces, dashes, periods, commas, exclamation points, and question marks."
+            },
+            "content": {
+                "string": "Content must not be empty.",
+                "min": "Content must be at least 5 characters long.",
+                "regex": "Content must only include allowed characters."
+            }
+        },
+        "toast": {
+            "success": {
+                "title": "Comment edited successfully",
+                "description": "Your comment has been edited successfully"
+            },
+            "error": {
+                "title": "Error while editing the comment",
+                "description": "An error occurred while editing your comment"
+            }
+        }
+    },
+    "deleteCommentDialog": {
+        "title": "Delete a comment",
+        "description": "Are you sure you want to delete this comment?",
+        "cancelButton": "Cancel",
+        "submitButton": "Delete",
+        "toast": {
+            "success": {
+                "title": "Comment deleted successfully",
+                "description": "Your comment has been deleted successfully"
+            },
+            "error": {
+                "title": "Error while deleting the comment",
+                "description": "An error occurred while deleting your comment"
+            }
+        }
+    }
+}

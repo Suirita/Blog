@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+  --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@layer base {
+  :root {
+    /* Base Colors */
+    --background: 210 20% 98%; /* Soft blue-gray background */
+    --foreground: 210 15% 20%; /* Dark slate text */
+
+    /* Card & Popover */
+    --card: 0 0% 100%; /* White cards */
+    --card-foreground: 210 15% 20%; /* Dark slate text */
+    --popover: 0 0% 100%; /* White popovers */
+    --popover-foreground: 210 15% 20%; /* Dark slate text */
+
+    /* Primary & Secondary */
+    --primary: 220 60% 50%; /* Vibrant blue */
+    --primary-foreground: 0 0% 100%; /* White text on primary */
+    --secondary: 210 20% 90%; /* Light blue-gray */
+    --secondary-foreground: 210 15% 20%; /* Dark slate text */
+
+    /* Muted & Accent */
+    --muted: 210 20% 95%; /* Very light blue-gray */
+    --muted-foreground: 210 10% 40%; /* Medium slate text */
+    --accent: 340 65% 55%; /* Soft red-pink accent */
+    --accent-foreground: 0 0% 100%; /* White text on accent */
+
+    /* Destructive */
+    --destructive: 0 70% 50%; /* Bright red for errors */
+    --destructive-foreground: 0 0% 100%; /* White text on destructive */
+
+    /* Borders & Inputs */
+    --border: 210 20% 85%; /* Light blue-gray borders */
+    --input: 210 20% 95%; /* Very light blue-gray inputs */
+    --ring: 220 60% 50%; /* Vibrant blue rings */
+
+    /* Charts */
+    --chart-1: 220 60% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+
+    /* Radius */
+    --radius: 0.5rem;
+
+    /* Sidebar */
+    --sidebar-background: 210 20% 95%;
+    --sidebar-foreground: 210 15% 20%;
+    --sidebar-primary: 220 60% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 20% 90%;
+    --sidebar-accent-foreground: 210 15% 20%;
+    --sidebar-border: 210 20% 85%;
+    --sidebar-ring: 220 60% 50%;
+  }
+
+  .dark {
+    /* Base Colors */
+    --background: 210 15% 10%; /* Dark blue-gray background */
+    --foreground: 210 15% 90%; /* Light slate text */
+
+    /* Card & Popover */
+    --card: 210 15% 12%; /* Slightly lighter than background */
+    --card-foreground: 210 15% 90%; /* Light slate text */
+    --popover: 210 15% 12%; /* Slightly lighter than background */
+    --popover-foreground: 210 15% 90%; /* Light slate text */
+
+    /* Primary & Secondary */
+    --primary: 220 60% 60%; /* Lighter vibrant blue */
+    --primary-foreground: 0 0% 100%; /* White text on primary */
+    --secondary: 210 15% 20%; /* Darker blue-gray */
+    --secondary-foreground: 210 15% 90%; /* Light slate text */
+
+    /* Muted & Accent */
+    --muted: 210 15% 25%; /* Dark muted background */
+    --muted-foreground: 210 10% 60%; /* Medium slate text */
+    --accent: 340 65% 65%; /* Brighter red-pink accent */
+    --accent-foreground: 0 0% 100%; /* White text on accent */
+
+    /* Destructive */
+    --destructive: 0 70% 60%; /* Bright red for errors */
+    --destructive-foreground: 0 0% 100%; /* White text on destructive */
+
+    /* Borders & Inputs */
+    --border: 210 15% 25%; /* Dark blue-gray borders */
+    --input: 210 15% 20%; /* Dark blue-gray inputs */
+    --ring: 220 60% 60%; /* Lighter vibrant blue rings */
+
+    /* Charts */
+    --chart-1: 220 60% 60%;
+    --chart-2: 160 60% 55%;
+    --chart-3: 30 80% 65%;
+    --chart-4: 280 65% 70%;
+    --chart-5: 340 75% 65%;
+
+    /* Sidebar */
+    --sidebar-background: 210 15% 12%;
+    --sidebar-foreground: 210 15% 90%;
+    --sidebar-primary: 220 60% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 15% 20%;
+    --sidebar-accent-foreground: 210 15% 90%;
+    --sidebar-border: 210 15% 25%;
+    --sidebar-ring: 220 60% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
