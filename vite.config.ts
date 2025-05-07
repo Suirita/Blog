@@ -40,9 +40,11 @@ export default defineConfig({
   },
 
   build: {
+    // this must match Laravel’s expectation of public/build
     outDir: 'public/build',
     manifest: true,
     rollupOptions: {
+      // ensure your entry matches exactly
       input: 'resources/js/app.ts',
     },
   },
